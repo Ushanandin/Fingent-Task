@@ -1,0 +1,45 @@
+<mat-toolbar class="taskdetails-mat-color">
+  <h3>Employee Task</h3>
+  <span class="mat-count">{{ taskCount }}</span>
+  <span class="mat-spacer"></span>
+  <button mat-icon-button aria-label="....">
+    <mat-icon>how_to_reg</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="d-flex justify-content-between">
+  <button mat-raised-button (click)="openDialog('0ms', '0ms')">
+    Add New Task
+  </button>
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #inputhere />
+  </mat-form-field>
+</div>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="Task">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Task Name</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.title }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.completed ? "Completed" : "Not completed" }}
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">
+        No data matching the filter "{{ inputhere.value }}"
+      </td>
+    </tr>
+  </table>
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+  ></mat-paginator>
+</div>

@@ -1,0 +1,33 @@
+$primary-mat-bgcolor: #32395d;
+$primary-mat-color: #ffff;
+.mat-spacer {
+  flex: 1 1 auto;
+}
+.taskdetails-mat-color {
+  background-color: $primary-mat-bgcolor;
+  color: $primary-mat-color;
+  margin-bottom: 2em;
+}
+.taskdetails-mat-color span {
+  margin-right: 1em;
+}
+.mat-count {
+  border: 1px solid;
+  padding: 0.5em;
+  margin-left: 1em;
+}
+button {
+  margin-left: 8px;
+  background-color: $primary-mat-bgcolor;
+  color: $primary-mat-color;
+}
+.custom-btn {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+$primary-mat-bgcolor: #32395d;
+$primary-mat-color: #ffff;
+.mat-spacer {
+  flex: 1 1 auto;
+}
+.dashboard-mat-color {
+  background-color: $primary-mat-bgcolor;
+  color: $primary-mat-color;
+}
+.dashboard-mat-color span {
+  margin-right: 1em;
+}
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+}
+
+td,
+th {
+  width: 25%;
+}
+a {
+  text-decoration: none;
+}
+.mat-count {
+  border: 1px solid;
+  padding: 0.5em;
+  margin-left: 1em;
+}

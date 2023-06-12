@@ -1,0 +1,12 @@
+<div class="container">
+  <h6 class="mat-dialog-header">Add New Task</h6>
+  <form [formGroup]="taskForm" (ngSubmit)="saveTask(taskForm)">
+    <div>
+      <input type="text" class="input-field" formControlName="title" />
+    </div>
+    <div mat-dialog-actions>
+      <button mat-dialog-close type="submit" class="btn btn-save">Save</button>
+      <button mat-dialog-close class="btn btn-cancel">Cancel</button>
+    </div>
+  </form>
+</div>

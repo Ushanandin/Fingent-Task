@@ -1,0 +1,25 @@
+$primary-mat-bgcolor: #32395d;
+$primary-mat-color: #ffff;
+.input-field {
+  width: 100%;
+  padding: 10px;
+  padding-left: 3em;
+  outline: none;
+}
+.btn {
+  color: $primary-mat-color;
+  padding: 0.3em 2em;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.btn-save {
+  background-color: $primary-mat-bgcolor;
+}
+.btn-cancel {
+  background-color: red;
+  margin-left: 1em;
+}
+.mat-dialog-header {
+  margin-top: 2em;
+}

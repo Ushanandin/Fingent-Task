@@ -1,0 +1,12 @@
+$primary-mat-bgcolor: #32395d;
+$primary-mat-color: #ffff;
+.icon-spacer {
+  flex: 1 1 auto;
+}
+.custom-color {
+  background-color: $primary-mat-bgcolor;
+  color: $primary-mat-color;
+}
+.custom-color span {
+  margin-right: 1em;
+}

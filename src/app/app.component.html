@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <mat-toolbar class="custom-color" *ngIf="!isLoggedIn">
+    <h3>EMPLOYEE DASHBOARD</h3>
+    <span class="icon-spacer"></span>
+    <span routerLink=""><mat-icon>phone</mat-icon></span>
+    <span routerLink="/login"><mat-icon>account_circle</mat-icon></span>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>
